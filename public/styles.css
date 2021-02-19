@@ -1,0 +1,59 @@
+.App{background-color: #7cd7de;
+background-image: url("https://www.transparenttextures.com/patterns/brick-wall-dark.png");
+  height: 550px;
+  padding: 100px;
+}
+h1{
+  display: inline-block;
+  font-size: 75px;
+  font-weight: bolder;
+
+}
+h2{display: inline-block;
+  font-size: 55px;
+}
+h3{
+  margin-top: 50px;
+  font-size: 40px;
+}
+.bw{
+
+margin: auto;
+text-align: center;
+
+}
+
+.boll{
+  display: inline;
+  margin: auto;
+}
+.red{
+  color: red;
+}
+.green{
+  color: #54ff0a;
+}
+.word{
+  margin: auto;
+  text-align: center;
+}
+.woll{
+  display: inline;
+  margin: auto;
+}
+
+body{
+  margin: 0;
+
+}
+button{
+  width: 52px;
+  height: 52px;
+  font-size: 45px;
+  background: inherit;
+  border-radius: 5px;
+  margin: 5px;
+  border: 1px solid white;
+box-shadow: 5px 10px #68bdbd;
+
+}
