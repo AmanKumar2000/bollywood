@@ -1,7 +1,7 @@
 .App{background-color: #7cd7de;
 background-image: url("https://www.transparenttextures.com/patterns/brick-wall-dark.png");
   height: 550px;
-  padding: 40px;
+  padding: 10px;
 }
 h1{
   display: inline-block;
