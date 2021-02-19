@@ -26,6 +26,30 @@ function App() {
     const [over, setOver] = useState(false);
       const [remainingKey, setRemainingKey] = useState(["M","N","B","V","C","X","Z","S","D","F","G","H","J","K","L","P","Y","T","R","W","Q"]);
 
+      function handleClick(key){
+
+            if (moviename.lastIndexOf(key) !== -1) {
+              setMatchList(prev => {
+                return [...prev, key];
+              });
+            }
+
+
+            console.log(keyList);
+            if (keyList.findIndex((element) => element === key) === -1)
+              setKeyList(prev => {
+                return [...prev, key];
+              });
+
+
+              if (remainingKey.findIndex((element) => element === key) !== -1)
+                setRemainingKey(prev => {
+
+                  return [...prev.filter(item=>{return item!==key})];
+                });
+
+      }
+
   const handleKeyDown = (event) => {
     console.log('A key was pressed', event.key);
     const key = event.key.toUpperCase();
@@ -80,7 +104,7 @@ function App() {
     div className = "App" >
     < Bw count = { unique.length - uniqueMatch.length} over={over}/>
      <   Word movie = { moviename} countb = { unique.length - uniqueMatch.length } keys = { keyList    } finish={()=>{setOver(true); setTimeout(()=>{window.location.reload();}, 3000)  }}/>
-      < Button remant={remainingKey}> </ Button>
+      < Button remant={remainingKey} onClick={(a)=>{handleClick(a)}}> </ Button>
      </div >
   );
 }

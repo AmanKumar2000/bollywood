@@ -4,7 +4,7 @@ function bw(props) {
 
   const ret=props.remant.map(function(item,index){
 
-    return (<button key={index} > {item } &nbsp;</button>);
+    return (<button key={index} onClick={() => props.onClick(item)} > {item } &nbsp;</button>);
 
   });
 
