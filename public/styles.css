@@ -5,7 +5,7 @@ background-image: url("https://www.transparenttextures.com/patterns/brick-wall-d
 }
 h1{
   display: inline-block;
-  font-size: 75px;
+  font-size: 65px;
   font-weight: bolder;
 
 }
@@ -36,6 +36,7 @@ text-align: center;
 .word{
   margin: auto;
   text-align: center;
+margin: 5%;
 }
 .woll{
   display: inline;
@@ -56,4 +57,7 @@ button{
   border: 1px solid white;
 box-shadow: 5px 10px #68bdbd;
 
+}
+.butan{
+  margin: 5%;
 }
