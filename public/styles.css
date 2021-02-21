@@ -1,54 +1,61 @@
-.App{background-color: #7cd7de;
-background-image: url("https://www.transparenttextures.com/patterns/brick-wall-dark.png");
+.App {
+  background-color: #7cd7de;
+  background-image: url("https://www.transparenttextures.com/patterns/brick-wall-dark.png");
   height: 100%;
   padding: 0px;
 }
-h1{
+
+h1 {
   display: inline-block;
   font-size: 65px;
   font-weight: bolder;
-
 }
-h2{display: inline-block;
+
+h2 {
+  display: inline-block;
   font-size: 55px;
 }
-h3{
+
+h3 {
   margin-top: 50px;
   font-size: 40px;
 }
-.bw{
 
-margin: auto;
-padding-top: 10%;
-text-align: center;
-
+.bw {
+  margin: auto;
+  padding-top: 10%;
+  text-align: center;
 }
 
-.boll{
+.boll {
   display: inline;
   margin: auto;
 }
-.red{
+
+.red {
   color: red;
 }
-.green{
+
+.green {
   color: #54ff0a;
 }
-.word{
+
+.word {
   margin: auto;
   text-align: center;
-margin: 5%;
+  margin: 5%;
 }
-.woll{
+
+.woll {
   display: inline;
   margin: auto;
 }
 
-body{
+body {
   margin: 0;
-
 }
-button{
+
+button {
   width: 52px;
   height: 52px;
   font-size: 45px;
@@ -56,10 +63,13 @@ button{
   border-radius: 5px;
   margin: 5px;
   border: 1px solid white;
-box-shadow: 5px 10px #68bdbd;
-
+  box-shadow: 4px 7px #30676b;
 }
-.butan{
+
+.butan {
   margin: 0 5%;
   padding: 50px 0 60px;
+}
+.x{
+  padding-bottom: 65px;
 }

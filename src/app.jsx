@@ -35,7 +35,6 @@ function App() {
             }
 
 
-            console.log(keyList);
             if (keyList.findIndex((element) => element === key) === -1)
               setKeyList(prev => {
                 return [...prev, key];
@@ -51,30 +50,9 @@ function App() {
       }
 
   const handleKeyDown = (event) => {
-    console.log('A key was pressed', event.key);
+
     const key = event.key.toUpperCase();
-
-
-
-    if (moviename.lastIndexOf(key) !== -1) {
-      setMatchList(prev => {
-        return [...prev, key];
-      });
-    }
-
-
-    console.log(keyList);
-    if (keyList.findIndex((element) => element === key) === -1)
-      setKeyList(prev => {
-        return [...prev, key];
-      });
-
-
-      if (remainingKey.findIndex((element) => element === key) !== -1)
-        setRemainingKey(prev => {
-
-          return [...prev.filter(item=>{return item!==key})];
-        });
+    handleClick(key);
 
   };
 
@@ -83,16 +61,12 @@ function App() {
 
 
     window.addEventListener('keydown', handleKeyDown);
-    //window.addEventListener('keydown', event => {
-    //const key = event.key.toUpperCase();
-
 
 
     return () => {
       window.removeEventListener('keydown', handleKeyDown);
     };
 
-    //});
   }, []);
 
   var unique = keyList.filter(onlyUnique);

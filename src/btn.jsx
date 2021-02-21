@@ -4,7 +4,7 @@ function bw(props) {
 
   const ret=props.remant.map(function(item,index){
 
-    return (<button key={index} onClick={() => props.onClick(item)} > {item } &nbsp;</button>);
+    return (<button className="x" key={index} onClick={() => props.onClick(item)} > {item } &nbsp;</button>);
 
   });
 
@@ -12,7 +12,7 @@ function bw(props) {
   return (
 <div className="butan">
 <h3>KEYS LEFT:</h3>
-<div className="x">{ret} </div>
+<div >{ret} </div>
  </div>
   );
 }
